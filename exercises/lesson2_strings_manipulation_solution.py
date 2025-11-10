@@ -3,7 +3,7 @@ first_name = "John"
 # Create a variable last_name and assignt to it your last name. 
 last_name = "Doe"
 # Create a variable full_name by concatenating first_name and last_name with a space in between.
-full_name = first_name + " " + last_name
+full_name = first_name +  " "  + last_name
 #  Print out the full_name.
 print(f"Full Name: {full_name}")
 # Print out the length of full_name using the len()function.
