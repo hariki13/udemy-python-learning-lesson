@@ -1,12 +1,12 @@
 # Converting Days to Weeks
 
 # Task 1: Set up variables
-days =  # Your code here
-weeks =  # Your code here
+days = 90  # Your code here
+weeks = days // 7  # Your code here
 
 # Bonus task: using more advanced concept - remainder
-remaing_days =  Your code here (hint: use % (modulo operator))
+remaing_days =  days % 7  
 
 # Task 2: Convert days to weeks
-print  # Your code here
-print  # Your code here
+print (f"{days} days is equal to {weeks} full weeks.") # Your code here
+print (f" there are {remaing_days} days left over.") # Your code here

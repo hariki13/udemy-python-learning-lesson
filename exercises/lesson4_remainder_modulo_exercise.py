@@ -5,6 +5,21 @@
 # How many complete rows can you fill, and how many seats will be 
 # left over in the partially filled row?
 
+# set the variable
+total_seats = 50
+group_size = 7
+
+# calculate the number of full rows
+full_rows = total_seats // group_size
+
+# calculate leftover seats
+left_over_seats = total_seats % group_size
+
+# Print out the results
+
+print(f"Number of full rows: {full_rows}")
+print(f"Leftover seats in the last row: {left_over_seats}")
+
 # 2. Decode the Secret Message
 # You've just intercepted an encoded message . 
 # The message is a string of numbers, but you know their 
@@ -17,4 +32,12 @@
 # 2. Use this to determine the correstponding letter. 
 # 3. Report back with the decoded letter.
 
-# encoded_message = 1233248916372176406
+encoded_message = 1233248916372176406
+
+# Revealing the last letter
+last_digit = encoded_message % 26
+
+# Converting the digit to a letter (A=0, B=1 etc)
+decoded_letter = chr(last_digit + 65)
+
+print(f"The last letter of the secret message is: {decoded_letter}")

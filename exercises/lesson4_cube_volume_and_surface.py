@@ -7,16 +7,16 @@
 
 # 1. Declare the side length
 # Use user's input to enter any number they want
-side_length = float(input("Enter the side length of a cube:"))
+side_length = float(input("4"))
 # Uncomment if you want to use predefined side length
 #side_length = 4
 
 # 2. Calculate the volume
-volume = side_length ** 3
-
+volume = {side_length ** 3}
+surface_area = (6** {side_length **2})
 # 3. Print the result
 print("The volume of the cube is:", volume)
-
+print("The volume of the cube is:", surface_area)
 # Bonus tasks:
 # Modify the program to calculate the surface area of the cube (hint: it's 6 ** side_length ** 2)
 # Create a program that calculates both volume and surface area, and prints both results. 
