@@ -50,14 +50,21 @@ support_cost = 5000
 misc_cost = 2000
 
 # TODO: Calculate total startup cost
+total_startup_cost = dev_cost + marketing_cost + equipment_cost
 
 # TODO: Caculate monthly revenue
+monthly_revenue = (basic_tier_price * basic_tier_users) + (pro_tier_price * pro_tier_users)
 
 # TODO: Calculte monthly operating cost
+monthly_operating_cost = server_cost + support_cost + misc_cost
 
 # TODO: Calculate monthly profit
+months_profit = monthly_revenue - monthly_operating_cost
+
 
 # TODO: Calculate months to break even
+
+months_to_break_even = total_startup_cost / months_profit
 
 # TODO: Display results using formated strings
 print("Financial Projects:")
