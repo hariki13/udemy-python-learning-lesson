@@ -1,6 +1,6 @@
 from datetime import datetime
-#current_year = 2024
-birth_year = input("Enter your birth year:\n")
+#current_year = 2025
+birth_year = input("enter a year born: ")
 current_year = datetime.now().year
 
 age = current_year - int(birth_year)

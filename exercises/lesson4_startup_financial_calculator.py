@@ -68,6 +68,10 @@ months_to_break_even = total_startup_cost / months_profit
 
 # TODO: Display results using formated strings
 print("Financial Projects:")
+print(f"print total startup cost: ${total_startup_cost:,.2f}")
+print(f"monthly revenue: ${monthly_revenue:,.2f}")
+print(F"monthly profit: ${months_profit:,.2f}")
+print(F"months to break even: {months_to_break_even:,.1f}")
 # Use f-strings to display the results here
 
 # Sensativity analysis
@@ -77,11 +81,26 @@ basic_tier_users += 500
 pro_tier_users += 200
 
 # TODO: Recalculate metrics with new users numbers
+new_monthly_revenue = (basic_tier_price * basic_tier_users) + (pro_tier_price * pro_tier_users)
+new_monthly_profit = new_monthly_revenue - monthly_operating_cost
+new_months_to_break_even = total_startup_cost / new_monthly_profit
 
 # TODO: Display updated results
 print("Updated Financial Projects:")
 # Use f-srings to display the updated results here
+print(f"new monthly revenue: ${new_monthly_revenue:,.2f}")
+print(f"new monthly profit: ${new_monthly_profit:,.2f}")
+print(f"new months to break even: {new_months_to_break_even:,.1f}")
 
+#calculate and display the impact of changes
+revenue_increase = new_monthly_revenue - monthly_revenue
+profit_increase = new_monthly_profit - months_profit
+break_even_improvement = months_to_break_even - new_months_to_break_even
+
+print("\nImpact of user increase:")
+print(f"Revenue Increase: ${revenue_increase:,.2f}")
+print(F"Profit Increase: ${profit_increase:,.2f}")
+print(f"Break-Even Time Reduction: {break_even_improvement:,.1f}")
 
 
 

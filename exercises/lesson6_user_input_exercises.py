@@ -42,9 +42,11 @@
 # Write a program that requests a character name, a place, and an object, then 
 # weaves these elements into a short short story.
 
-
-
-
+character = input("Enter a character name: ")
+place = input("Enter a place: ")
+object = input("Enter an object: ")
+print(f"once upon a time, {character} found a magical {object} in {place}.")
+print(f"the {object} granted {character} three wishes, changing their life forever.")
 
 
 
