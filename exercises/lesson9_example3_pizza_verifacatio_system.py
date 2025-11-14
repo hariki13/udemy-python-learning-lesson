@@ -9,22 +9,28 @@
 
 # TODO 1: Create a variable called 'receipt_number' and assign it any four-digit number
 # Hint: This will be the number that customers need to match with their order details
-receipt_number = None  # Replace None with your number
+receipt_order = 2464  # Replace None with your number
 
 # TODO 2: Create an input statement to get the number of pizza slices from the customer
 # Hint: Remember to convert the input to an integer using int()
 # Hint: Use a descriptive prompt message for the customer
+slices = int(input("How many pizza slices did you order? "))
 
 # TODO 3: Create another input statement to get the price per slice
 # Hint: Similar to TODO 2, remember to convert to integer
 # Hint: Use clear prompt message
+price_per_slice = int(input("What was the price per slice? "))
 
 # TODO 4: Calculate the total by multiplying slices with price_per_slice
 # Hint: Create a variable to store the result of multiplication
+# Calculate the total:
+order_total = slices * price_per_slice
 
 # TODO 5: Compare the calculated total with receipt_number and print the result
 # Hint: Use the == operator for comparison
 # Hint: This should print True if they match, False if they don't
+# Check if the order total matches our receipt number:
+print(order_total == receipt_order)
 
 # BONUS TODO 6: Add error handling for invalid inputs
 # Hint: What happens if someone enters "abc" instead of a number?

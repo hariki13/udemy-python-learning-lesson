@@ -1,6 +1,6 @@
-def print_section(title):
+def print_section(november):
     print(f"\n{'='*70}")
-    print(f" {title}")
+    print(f" {november}")
     print(f"\n{'='*70}")
 
 print_section("Basic Bollean Operations - Day Off Checker")

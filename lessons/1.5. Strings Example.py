@@ -22,6 +22,9 @@ word_with_suffix = word + suffix
 print(f"The word with the suffix: '{suffix}':{word_with_suffix}")
 
 # Convert the word to uppercase
-
+uppercase_word = word.upper()
 # Replace a character in the word
-
+replacement_char = "x"
+replaced_word = word.replace("1", replacement_char)
+print(f"The word '1' replaced by '{replacement_char}': {replaced_word}")
+print(uppercase_word)
